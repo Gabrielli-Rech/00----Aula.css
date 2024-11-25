@@ -1,21 +1,136 @@
+/* Resetando margens e preenchimentos para um layout consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Corpo da página */
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    margin: 20;
-    padding: 10;
-    border: 1px dashed #33ccff;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-h1, h2 {
+/* Cabeçalho */
+h1 {
     text-align: center;
+    font-size: 2.5em;
     color: #33ccff;
+    margin-bottom: 20px;
 }
 
-p {
+/* Subtítulos */
+h2 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.8em;
+    color: #ff6400;
     margin-top: 20px;
+}
+
+/* Estilizando as listas de ingredientes e preparo */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+li:before {
+    
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #33ccff;
+    font-size: 1.5em;
+}
+/* Rodapé*/
+footer{
+    text-align: center;
+    font-size: 1.8em;
+    color: #33ccff;
+    margin-top: 20px;
+}
+/* Parágrafo de encerramento */
+p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #555;
+    margin-top: 30px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 1024px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    li {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* Responsividade para telas muito pequenas (smartphones) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    li {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+}
+
+/* Responsividade para telas menores que 480px (celulares em modo retrato) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    li {
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
 }
