@@ -1,0 +1,21 @@
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 20;
+    padding: 10;
+    border: 1px dashed #33ccff;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #33ccff;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
